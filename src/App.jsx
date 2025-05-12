@@ -36,6 +36,9 @@ function App() {
     )
   }
 
+  const total = addedProducts.reduce(
+    (sum, prodotto) => sum + prodotto.price * prodotto.quantity, 0
+  )
   return (
     <>
       <h1>Lista Prodotti</h1>
@@ -56,6 +59,8 @@ function App() {
           </li>
         ))}
       </ul>
+      <h3>Totale: € {total.toFixed(2)}</h3>
+      <button onClick={() => setAddedProducts([])}>Pulisci carrello</button>
     </>
   )
 }
