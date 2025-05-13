@@ -7,3 +7,9 @@
 .lista-prodotti {
   list-style: none;
 }
+
+input[type="number"] {
+  width: 50px;
+  box-sizing: border-box;
+  text-align: right;
+}
