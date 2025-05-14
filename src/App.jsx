@@ -43,8 +43,34 @@ function App() {
   //   (sum, prodotto) => sum + prodotto.price * prodotto.quantity, 0
   // )
 
+  // return (
+  {/* esercizio versione fatta da me */ }
 
+  {/* <h1>Lista Prodotti</h1>
+      <ul className="lista-prodotti">
+        {prodotti.map((prodotto, i) => (
+          <li key={i}>
+            {prodotto.name} - € {prodotto.price}
+            <button onClick={() => addToCart(prodotto)}>Aggiungi al carrello</button>
+          </li>
+        ))}
+      </ul>
+      <h2>Carrello</h2>
+      <ul className="carrello">
+        {addedProducts.map((prodotto, i) => (
+          <li key={i}>
+            {prodotto.name} - € {prodotto.price} x {prodotto.quantity}
+            <button onClick={() => removeFromCart(i)}>Rimuovi dal carrello</button>
+          </li>
+        ))}
+      </ul>
+      <h3>Totale: € {total.toFixed(2)}</h3>
+      <button onClick={() => setAddedProducts([])}>Pulisci carrello</button> */}
+  //     </>
+  //   )
+  // }
 
+  // export default App
 
 
 
@@ -101,37 +127,6 @@ function App() {
         <h2>Il totale da pagare è :{totalToPay.toFixed(2)}€</h2>
       </>)}
 
-
-
-
-
-
-
-
-
-
-      {/* esercizio versione fatta da me */}
-
-      {/* <h1>Lista Prodotti</h1>
-      <ul className="lista-prodotti">
-        {prodotti.map((prodotto, i) => (
-          <li key={i}>
-            {prodotto.name} - € {prodotto.price}
-            <button onClick={() => addToCart(prodotto)}>Aggiungi al carrello</button>
-          </li>
-        ))}
-      </ul>
-      <h2>Carrello</h2>
-      <ul className="carrello">
-        {addedProducts.map((prodotto, i) => (
-          <li key={i}>
-            {prodotto.name} - € {prodotto.price} x {prodotto.quantity}
-            <button onClick={() => removeFromCart(i)}>Rimuovi dal carrello</button>
-          </li>
-        ))}
-      </ul>
-      <h3>Totale: € {total.toFixed(2)}</h3>
-      <button onClick={() => setAddedProducts([])}>Pulisci carrello</button> */}
     </>
   )
 }
